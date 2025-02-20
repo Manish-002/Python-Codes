@@ -1,0 +1,18 @@
+def main():
+
+    n = int(input("Enter the number of elements in the list: "))
+    user_list = [int(input(f"Enter element {i + 1}: ")) for i in range(n)]
+    print("Your list:", user_list)
+
+    nearby_values = [(user_list[i], user_list[i + 1]) for i in range(len(user_list) - 1)]
+    print("Nearby values:", nearby_values)
+
+    def add_nearby_values(pairs):
+        return [a + b for a, b in pairs]
+
+    added_values = add_nearby_values(nearby_values)
+    total = sum(added_values)
+    print("Sum of nearby values:", total)
+
+if __name__ == "__main__":
+    main()
