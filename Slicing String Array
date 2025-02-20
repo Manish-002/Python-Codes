@@ -1,0 +1,26 @@
+# List of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Slicing from index 2 to 5 (exclusive)
+slice1 = numbers[2:5]
+print("Slice from index 2 to 5 (exclusive):", slice1)  # Output: [3, 4, 5]
+
+# Slicing with step 2
+slice2 = numbers[1:8:2]
+print("Slice with step 2:", slice2)  # Output: [2, 4, 6, 8]
+
+# Slicing from index 5 to the end
+slice3 = numbers[5:]
+print("Slice from index 5 to the end:", slice3)  # Output: [6, 7, 8, 9, 10]
+
+# Slicing from the beginning to index 3 (exclusive)
+slice4 = numbers[:3]
+print("Slice from the beginning to index 3 (exclusive):", slice4)  # Output: [1, 2, 3]
+
+# Slicing with negative indices
+slice5 = numbers[-5:-2]
+print("Slice with negative indices:", slice5)  # Output: [6, 7, 8]
+
+# Reversing the list
+reversed_numbers = numbers[::-1]
+print("Reversed list:", reversed_numbers)  # Output: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
